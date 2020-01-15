@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Patty | Chris</string>
+    <string name="show">Show:</string>
+    <string name="orderBy">Order By:</string>
+    <string name="bookingId">Booking Id:</string>
+    <string name="payTransactionId">Pay Transaction Id</string>
+    <string name="startDate">Start Date</string>
+    <string name="endDate">End Date</string>
+</resources>
