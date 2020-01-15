@@ -5,5 +5,8 @@
     <string name="bookingId">Booking Id:</string>
     <string name="payTransactionId">Pay Transaction Id</string>
     <string name="startDate">Start Date</string>
+    <string name="openReservation">Open Resrvations:</string>
+    <string name="completeJobs">Complete Jobs:</string>
+    <string name="clientCanceledJobs">Client Canceled Jobs:</string>
     <string name="endDate">End Date</string>
 </resources>
