@@ -4,185 +4,618 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorSuccess"
     tools:context=".MainActivity">
 
+    <View
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/navBarColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/view"
-        android:layout_width="407dp"
-        android:layout_height="264dp"
+        android:layout_width="match_parent"
+        android:layout_height="351dp"
+        android:layout_marginTop="8dp"
         android:background="@color/colorAccent"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.181" />
+        app:layout_constraintTop_toBottomOf="@id/top" />
 
     <View
         android:id="@+id/vi"
         android:layout_width="match_parent"
-        android:layout_height="10dp"
-        android:background="@color/colorSuccess"
+        android:layout_height="5dp"
+        android:background="@drawable/green_view_shadow"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/view"
-        app:layout_constraintVertical_bias="0.005" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <View
         android:id="@+id/vi2"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_marginTop="12dp"
+        android:layout_height="148dp"
+        android:layout_marginTop="4dp"
         android:background="@color/colorAccent"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/view" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="97dp"
-        android:layout_height="25dp"
+        android:id="@+id/show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/show"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/vi"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintHorizontal_bias="0.075"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.152" />
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.063" />
+
+    <TextView
+        android:id="@+id/order"
+        android:layout_width="75dp"
+        android:layout_height="17dp"
+        android:text="@string/orderBy"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/vi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.062" />
 
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="110dp"
-        android:layout_height="31dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="140dp"
+        android:layout_height="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/vi"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintHorizontal_bias="0.103"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.204" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="112dp"
-        android:layout_height="26dp"
-        android:text="@string/orderBy"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.595"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.15" />
+        app:layout_constraintTop_toBottomOf="@+id/top"
+        app:layout_constraintVertical_bias="0.164" />
 
     <Spinner
         android:id="@+id/spinner2"
-        android:layout_width="190dp"
-        android:layout_height="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="173dp"
+        android:layout_height="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/vi"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.805"
+        app:layout_constraintHorizontal_bias="0.819"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.203" />
+        app:layout_constraintTop_toBottomOf="@+id/top"
+        app:layout_constraintVertical_bias="0.163" />
 
-    <EditText
-        android:id="@+id/edittext"
-        android:layout_width="149dp"
-        android:layout_height="30dp"
-        android:background="@color/editTextColor"
-        android:ems="10"
-        android:hint="@string/bookingId"
-        android:importantForAutofill="no"
-        android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.114"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.328" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bookingId"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/top"
+        app:layout_constraintVertical_bias="0.309" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="100dp"
-        android:layout_height="23dp"
-        android:text="@string/bookingId"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.096"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view"
-        app:layout_constraintVertical_bias="0.174" />
-
-    <TextView
-        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/payTransactionId"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.102"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view"
-        app:layout_constraintVertical_bias="0.303" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/vi"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/top"
+        app:layout_constraintVertical_bias="0.538" />
 
     <EditText
         android:id="@+id/payTransactionId"
-        android:layout_width="215dp"
-        android:layout_height="34dp"
-        android:background="@color/editTextColor"
+        android:layout_width="278dp"
+        android:layout_height="45dp"
+        android:background="@drawable/edit_border"
         android:ems="10"
         android:hint="@string/payTransactionId"
-        android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.679" />
+
+    <EditText
+        android:id="@+id/bookingid"
+        android:layout_width="119dp"
+        android:layout_height="33dp"
+        android:background="@drawable/edit_border"
+        android:drawableBottom="@color/navBarblack"
+        android:ems="10"
+        android:hint="@string/bookingId"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.414" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="81dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/startDate"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.879" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="79dp"
+        android:layout_height="23dp"
+        android:text="@string/endDate"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.153"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.436" />
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.823" />
+
+    <EditText
+        android:id="@+id/startDate"
+        android:layout_width="125dp"
+        android:layout_height="32dp"
+        android:background="@drawable/edit_border"
+        android:ems="10"
+        android:hint="@string/startDate"
+        android:inputType="datetime"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.959" />
+
+    <EditText
+        android:id="@+id/endDate"
+        android:layout_width="138dp"
+        android:layout_height="32dp"
+        android:background="@drawable/edit_border"
+        android:ems="10"
+        android:hint="@string/endDate"
+        android:inputType="datetime"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.959" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="182dp"
-        android:layout_height="37dp"
+        android:layout_width="71dp"
+        android:layout_height="35dp"
+        android:background="@drawable/reset_button"
+        android:text="@string/resetButton"
+        android:textColor="@color/editTextColor"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.926"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/top"
+        app:layout_constraintVertical_bias="0.969" />
+
+    <Button
+        android:id="@+id/openNumber"
+        android:layout_width="38dp"
+        android:layout_height="29dp"
+        android:background="@drawable/number_control"
+        android:text="@string/openReservationNumber"
+        android:textColor="@color/resetButtonColor"
+        app:layout_constraintBottom_toBottomOf="@+id/vi2"
+        app:layout_constraintEnd_toEndOf="@+id/vi2"
+        app:layout_constraintHorizontal_bias="0.361"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vi"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <Button
+        android:id="@+id/compleNumber"
+        android:layout_width="36dp"
+        android:layout_height="28dp"
+        android:background="@drawable/number_control"
+        android:text="@string/completeJobsNumber"
+        android:textColor="@color/resetButtonColor"
+        app:layout_constraintBottom_toBottomOf="@+id/vi2"
+        app:layout_constraintEnd_toEndOf="@+id/vi2"
+        app:layout_constraintHorizontal_bias="0.336"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vi"
+        app:layout_constraintVertical_bias="0.47" />
+
+    <Button
+        android:id="@+id/cancelNumber"
+        android:layout_width="38dp"
+        android:layout_height="26dp"
+        android:background="@drawable/number_control"
+        android:text="@string/clientCanceledJobsNumber"
+        android:textColor="@color/resetButtonColor"
+        app:layout_constraintBottom_toBottomOf="@+id/vi2"
+        app:layout_constraintEnd_toEndOf="@+id/vi2"
+        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vi"
+        app:layout_constraintVertical_bias="0.809" />
+
+    <TextView
+        android:id="@+id/openReservation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/editTextColor"
+        android:textStyle="bold"
+        android:background="@drawable/open_reservation"
         android:text="@string/openReservation"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.04"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.536" />
+        app:layout_constraintBottom_toBottomOf="@+id/vi2"
+        app:layout_constraintEnd_toEndOf="@+id/vi2"
+        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintStart_toStartOf="@+id/vi2"
+        app:layout_constraintTop_toTopOf="@+id/vi2"
+        app:layout_constraintVertical_bias="0.083" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="165dp"
-        android:layout_height="34dp"
+    <TextView
+        android:id="@+id/completeJob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_view_control"
         android:text="@string/completeJobs"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.036"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.602" />
+        android:textColor="@color/editTextColor"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/vi2"
+        app:layout_constraintEnd_toEndOf="@+id/vi2"
+        app:layout_constraintHorizontal_bias="0.019"
+        app:layout_constraintStart_toStartOf="@+id/vi2"
+        app:layout_constraintTop_toTopOf="@+id/vi2"
+        app:layout_constraintVertical_bias="0.471" />
+
+    <TextView
+        android:id="@+id/clientancelledJob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_view_control"
+        android:text="@string/clientCanceledJobs"
+        android:textColor="@color/editTextColor"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/vi2"
+        app:layout_constraintEnd_toEndOf="@+id/vi2"
+        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintStart_toStartOf="@+id/vi2"
+        app:layout_constraintTop_toTopOf="@+id/vi2"
+        app:layout_constraintVertical_bias="0.809" />
+
+    <TextView
+        android:id="@+id/approve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/approvedJob"
+        android:textColor="@color/editTextColor"
+        android:textStyle="bold"
+        android:background="@drawable/text_view_control"
+        app:layout_constraintBottom_toBottomOf="@+id/vi2"
+        app:layout_constraintEnd_toEndOf="@+id/vi2"
+        app:layout_constraintHorizontal_bias="0.610"
+        app:layout_constraintStart_toStartOf="@+id/vi2"
+        app:layout_constraintTop_toTopOf="@+id/vi2"
+        app:layout_constraintVertical_bias="0.083" />
+
+    <TextView
+        android:id="@+id/cancelJobs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_view_control"
+        android:text="@string/cancelledJobs"
+        android:textColor="@color/editTextColor"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/vi2"
+        app:layout_constraintEnd_toEndOf="@+id/vi2"
+        app:layout_constraintHorizontal_bias="0.607"
+        app:layout_constraintStart_toStartOf="@+id/vi2"
+        app:layout_constraintTop_toTopOf="@+id/vi2"
+        app:layout_constraintVertical_bias="0.471" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="189dp"
-        android:layout_height="36dp"
-        android:text="@string/clientCanceledJobs"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.04"
+        android:id="@+id/cancelJobsNumber"
+        android:layout_width="42dp"
+        android:layout_height="26dp"
+        android:background="@drawable/number_control"
+        android:text="@string/cancelledJobsNimber"
+        android:textColor="@color/resetButtonColor"
+        app:layout_constraintBottom_toBottomOf="@+id/vi2"
+        app:layout_constraintEnd_toEndOf="@+id/vi2"
+        app:layout_constraintHorizontal_bias="0.81"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.667" />
+        app:layout_constraintTop_toBottomOf="@+id/vi"
+        app:layout_constraintVertical_bias="0.479" />
 
-    <TableRow
-        android:layout_width="411dp"
-        android:layout_height="189dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <Button
+        android:id="@+id/approveNumber"
+        android:layout_width="40dp"
+        android:layout_height="26dp"
+        android:background="@drawable/number_control"
+        android:text="@string/approvedJobnumber"
+        android:textColor="@color/resetButtonColor"
+        app:layout_constraintBottom_toBottomOf="@+id/vi2"
+        app:layout_constraintEnd_toEndOf="@+id/vi2"
+        app:layout_constraintHorizontal_bias="0.806"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/vi"
+        app:layout_constraintVertical_bias="0.077" />
+    <View
+        android:id="@+id/shawodArea"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:background="@drawable/shadow_view"
+        app:layout_constraintTop_toBottomOf="@+id/vi2"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/editTextColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shawodArea">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tableBookId"
+                android:layout_width="124dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_title"
+                android:gravity="center"
+                android:text="@string/tableBookingId"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tableInfo"
+                android:layout_width="132dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/info_title_style"
+                android:gravity="center"
+                android:text="@string/tableInfo"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tableDateTime"
+                android:layout_width="155dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_title"
+                android:gravity="center"
+                android:text="@string/dateTime"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:layout_width="162dp"
+                android:layout_height="110dp"
+                android:gravity="center">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:text="@string/bookingCode"
+                        android:textSize="12sp"
+
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/detail_date"
+                        android:gravity="center"
+                        android:text="@string/bookindDateTime"
+                        android:textColor="@color/editTextColor"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="106dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/book_detail_but"
+                        android:drawableLeft="5dp"
+                        android:gravity="center"
+                        android:text="@string/BookingDetail"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="168dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/info_title_style"
+                android:gravity="center">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/from"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/country"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/fromLocation"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="TextView"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/to"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/country"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/toLocation"
+                        android:textSize="12sp" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/info_title_style">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="45dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/travelDate"
+                        android:textSize="12sp" />
+                </TableRow>
+            </TableLayout>
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pageTitle"
+        android:textStyle="bold"
+        android:textColor="@color/editTextColor"
+        app:layout_constraintBottom_toBottomOf="@+id/top"
+        app:layout_constraintEnd_toEndOf="@+id/top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/top"
+        android:gravity="center"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,5 @@
 <resources>
+    <string name="pageTitle">Your Bookings</string>
     <string name="app_name">Patty | Chris</string>
     <string name="show">Show:</string>
     <string name="orderBy">Order By:</string>
@@ -9,4 +10,28 @@
     <string name="completeJobs">Complete Jobs:</string>
     <string name="clientCanceledJobs">Client Canceled Jobs:</string>
     <string name="endDate">End Date</string>
+    <string name="resetButton">Reset</string>
+    <string name="approvedJob">Approved Jobs:</string>
+    <string name="cancelledJobs">Cancelled Jobs:</string>
+    <string name="cancelledJobsNimber">1</string>
+    <string name="approvedJobnumber">7</string>
+    <string name="openReservationNumber">3</string>
+    <string name="clientCanceledJobsNumber">3</string>
+    <string name="completeJobsNumber">1</string>
+<!--    // table string values-->
+    <string name="tableBookingId">Booking Id</string>
+    <string name="tableInfo">Info</string>
+    <string name="dateTime">Date/Time</string>
+<!--    booking id info-->
+    <string name="BookingDetail">Booking Details</string>
+    <string name="bookindDateTime">17-02-2016</string>
+    <string name="bookingCode">9419</string>
+<!--    information on booking-->
+    <string name="fromLocation">Luton Airport</string>
+    <string name="toLocation">United Kingdom</string>
+    <string name="country">London</string>
+<!--    data time for travel-->
+    <string name="travelDate">17-02-2016 -></string>
+    <string name="from">Form:</string>
+    <string name="to">To:</string>
 </resources>
