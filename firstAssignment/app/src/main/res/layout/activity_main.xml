@@ -81,7 +81,7 @@
         android:layout_height="36dp"
         app:layout_constraintBottom_toTopOf="@+id/vi"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintHorizontal_bias="0.098"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/top"
         app:layout_constraintVertical_bias="0.164" />
@@ -92,10 +92,10 @@
         android:layout_height="35dp"
         app:layout_constraintBottom_toTopOf="@+id/vi"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.819"
+        app:layout_constraintHorizontal_bias="0.76"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/top"
-        app:layout_constraintVertical_bias="0.163" />
+        app:layout_constraintVertical_bias="0.166" />
 
     <TextView
         android:id="@+id/textView2"
@@ -133,10 +133,11 @@
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintHorizontal_bias="0.163"
         app:layout_constraintStart_toStartOf="@+id/view"
         app:layout_constraintTop_toTopOf="@+id/view"
-        app:layout_constraintVertical_bias="0.679" />
+        app:layout_constraintVertical_bias="0.692"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/bookingid"
@@ -152,7 +153,8 @@
         app:layout_constraintHorizontal_bias="0.095"
         app:layout_constraintStart_toStartOf="@+id/view"
         app:layout_constraintTop_toTopOf="@+id/view"
-        app:layout_constraintVertical_bias="0.414" />
+        app:layout_constraintVertical_bias="0.414"
+        android:autofillHints="" tools:targetApi="o" />
 
     <TextView
         android:id="@+id/textView4"
@@ -194,7 +196,8 @@
         app:layout_constraintHorizontal_bias="0.094"
         app:layout_constraintStart_toStartOf="@+id/view"
         app:layout_constraintTop_toTopOf="@+id/view"
-        app:layout_constraintVertical_bias="0.959" />
+        app:layout_constraintVertical_bias="0.959"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/endDate"
@@ -209,10 +212,11 @@
         app:layout_constraintHorizontal_bias="0.615"
         app:layout_constraintStart_toStartOf="@+id/view"
         app:layout_constraintTop_toTopOf="@+id/view"
-        app:layout_constraintVertical_bias="0.959" />
+        app:layout_constraintVertical_bias="0.959"
+        android:importantForAutofill="no" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/resetButton"
         android:layout_width="71dp"
         android:layout_height="35dp"
         android:background="@drawable/reset_button"
@@ -440,7 +444,7 @@
                         android:text="@string/bookingCode"
                         android:textSize="12sp"
 
-                        />
+                        android:layout_marginStart="7dp" />
 
                 </TableRow>
 
@@ -458,7 +462,8 @@
                         android:gravity="center"
                         android:text="@string/bookindDateTime"
                         android:textColor="@color/editTextColor"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:layout_marginStart="15dp" />
                 </TableRow>
 
                 <TableRow
@@ -473,11 +478,11 @@
                         android:layout_marginLeft="7dp"
                         android:layout_marginTop="5dp"
                         android:background="@drawable/book_detail_but"
-                        android:drawableLeft="5dp"
                         android:gravity="center"
                         android:text="@string/BookingDetail"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                         />
                 </TableRow>
 
             </TableLayout>
@@ -492,6 +497,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="86dp"
+                        android:layout_height="22dp"
+                        app:srcCompat="@drawable/london_flag"
+                        />
                 </TableRow>
 
                 <TableRow
@@ -504,7 +515,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
                         android:text="@string/from"
-                        android:textSize="10sp" />
+                        android:textSize="10sp"
+                        android:layout_marginStart="5dp" />
 
                     <TextView
                         android:id="@+id/textView20"
@@ -524,21 +536,20 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
                         android:text="@string/fromLocation"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:layout_marginStart="5dp" />
                 </TableRow>
 
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <TextView
-                        android:id="@+id/textView24"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:text="TextView"
-                        android:textSize="12sp" />
-
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="10dp"
+                        android:layout_height="23dp"
+                        app:srcCompat="@drawable/london_flag"
+                        android:contentDescription="TODO" />
                 </TableRow>
 
                 <TableRow
@@ -551,7 +562,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
                         android:text="@string/to"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:layout_marginStart="5dp" />
 
                     <TextView
                         android:id="@+id/textView23"
@@ -572,7 +584,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
                         android:text="@string/toLocation"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:layout_marginStart="5dp" />
                 </TableRow>
             </TableLayout>
 
@@ -587,12 +600,12 @@
                     android:layout_marginTop="45dp"
                     android:gravity="center">
 
-                    <TextView
-                        android:id="@+id/textView31"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="TextView"
-                        android:textSize="12sp" />
+<!--                    <ImageView-->
+<!--                        android:id="@+id/imageView6"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:contentDescription="@string/image"-->
+<!--                        app:srcCompat="@drawable/ic_directions_car_black_24dp" />-->
 
                     <TextView
                         android:id="@+id/textView30"

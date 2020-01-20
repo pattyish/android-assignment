@@ -18,20 +18,49 @@
     <string name="openReservationNumber">3</string>
     <string name="clientCanceledJobsNumber">3</string>
     <string name="completeJobsNumber">1</string>
-<!--    // table string values-->
+    <!--    // table string values-->
     <string name="tableBookingId">Booking Id</string>
     <string name="tableInfo">Info</string>
     <string name="dateTime">Date/Time</string>
-<!--    booking id info-->
+    <!--    booking id info-->
     <string name="BookingDetail">Booking Details</string>
     <string name="bookindDateTime">17-02-2016</string>
     <string name="bookingCode">9419</string>
-<!--    information on booking-->
+    <!--    information on booking-->
     <string name="fromLocation">Luton Airport</string>
     <string name="toLocation">United Kingdom</string>
     <string name="country">London</string>
-<!--    data time for travel-->
+    <!--    data time for travel-->
     <string name="travelDate">17-02-2016 -></string>
     <string name="from">Form:</string>
     <string name="to">To:</string>
+    <string name="image"></string>
+    <!--    array of values -->
+    <string-array name="arrayOfValue">
+        <item> All</item>
+        <item> One</item>
+        <item> Two</item>
+        <item> Few</item>
+    </string-array>
+    <string-array name="orderedValue">
+        <item> PickUp Date</item>
+        <item> One</item>
+        <item> Two</item>
+        <item> Few</item>
+    </string-array>
+    <string-array name="array_technology">
+        <item>Android</item>
+        <item>Java</item>
+        <item>Php</item>
+        <item>Hadoop</item>
+        <item>Sap</item>
+        <item>Python</item>
+        <item>Ajax</item>
+        <item>C++</item>
+        <item>Ruby</item>
+        <item>Rails</item>
+        <item>.Net</item>
+        <item>Perl</item>
+    </string-array>
+    <string name="newActivityTitle">Programming Languages</string>
 </resources>
